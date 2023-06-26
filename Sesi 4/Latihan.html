@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingkaran</title>
+</head>
+<body>
+
+    <!-- Identitas Saya -->
+    <table>
+        <tr>
+            <td style="padding: 15px;">Nama</td>
+            <td style="padding: 15px;">Ervina Ayu Rosamada</td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;">Kode Peserta</td>
+            <td style="padding: 15px;">INPG-PKJ-08-046</td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;">Tugas</td>
+            <td style="padding: 15px;">Sesi 4</td>
+        </tr>
+    </table>
+    
+    <!-- 1. Judul Algoritma -->
+    <h1>Algoritma Lingkaran</h1>
+
+    <!-- 2. Inputan menghitung luas dan keliling lingkaran -->
+    <label for="radius">Jari-jari:</label><br>
+    <input
+        style="width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;" 
+        type="number" id="radius" /><br>
+    <button 
+        style="
+        background-color: #008CBA;
+        border-radius: 10px;
+        padding: 10px 10px;
+        border: 2px solid #008CBA;
+        color: white;
+        "
+     onclick="hitung()">Hitung</button>
+    <br><br>
+    <label for="luas">Luas:</label><br>
+    <input 
+        style="width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;" 
+     type="number" id="luas" disabled />
+    <br><br>
+    <label for="keliling">Keliling:</label><br>
+    <input 
+        style="width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;" 
+     type="number" id="keliling" disabled />
+    
+</body>
+
+<script>
+
+    // 3. Menghitung luas dan keliling lingkaran
+    function hitung() {
+    // Mendapatkan nilai jari-jari dari input
+    var radius = document.getElementById("radius").value;
+    
+    // 3.a Menghitung luas lingkaran (π * r^2)
+    var luas = Math.PI * Math.pow(radius, 2);
+    
+    // 3.b Menghitung keliling lingkaran (2 * π * r)
+    var keliling = 2 * Math.PI * radius;
+    
+    // 4. Menampilkan hasil pada input
+    document.getElementById("luas").value = luas;
+    document.getElementById("keliling").value = keliling;
+}
+</script>
+
+</html>
