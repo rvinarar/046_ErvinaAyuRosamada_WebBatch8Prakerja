@@ -1,0 +1,142 @@
+body{
+    background: white;
+    color: #ffffff;
+}
+
+h1{
+    text-align: center;
+}
+
+.box{
+    background: greenyellow;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+}
+
+.box-2{
+    background: navy;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+}
+
+.tulisan-1{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.tulisan-2{
+    color: orangered;
+    font-size: 24px;
+    font-style: italic;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: overline;
+}
+
+.tulisan-3{
+    color: aqua;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: line-through;
+    word-spacing: 10px;
+}
+
+.link{
+    font-size: 20pt;
+}
+
+.link:hover{
+    color: red;
+}
+
+.link:link{
+    color: blue;
+}
+
+.link:active{
+    color: green;
+}
+
+.link:visited{
+    background: yellow;
+}
+
+.tulisan_kiri{
+    text-align: left;
+    color: black;
+}
+
+.tulisan_kanan{
+    text-align: right;
+    color: black;
+}
+
+.tulisan_tengah{
+    text-align: center;
+    color: black;
+}
+
+.tulisan_justify{
+    text-align: justify;
+    color: black;
+}
+
+.kotak{
+    background: blue;
+    position: absolute;
+    left: 40px;
+    padding: 10px;
+}
+
+.kotak-2{
+    background: green;
+    position: relative;
+    left: 40px;
+    padding: 10px;
+}
+
+.kotak-3{
+    background: red;
+    position: static;
+    left: 40px;
+    padding: 10px;
+}
+
+.kotak-4{
+    background: hotpink;
+    position: fixed;
+    left: 40px;
+    padding: 10px;
+}
+
+#garis-1{
+    border-style: solid;
+}
+
+#garis-2{
+    border-style: solid;
+}
+#garis-3{
+    border-style: solid;
+}
+#garis-4{
+    border-style: solid;
+}
+#garis-5{
+    border-style: solid;
+}
+#garis-6{
+    border-style: solid;
+}
+#garis-7{
+    border-style: solid;
+}
+#garis-8{
+    border-style: solid;
+}
