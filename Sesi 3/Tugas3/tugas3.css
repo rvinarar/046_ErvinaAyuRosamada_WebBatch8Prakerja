@@ -31,7 +31,12 @@ nav ul li a:hover {
   background-color: aliceblue;
 }
 
-section {
+#section1 {
+  margin: 20px;
+  background: white;
+}
+
+section{
   margin: 20px;
 }
 
