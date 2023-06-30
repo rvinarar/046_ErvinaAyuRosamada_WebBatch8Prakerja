@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlajar Event</title>
+</head>
+<body>
+
+    <!-- Identitas Saya -->
+    <table>
+        <tr>
+          <td style="padding: 15px">Nama</td>
+          <td style="padding: 15px">Ervina Ayu Rosamada</td>
+        </tr>
+        <tr>
+          <td style="padding: 15px">Kode Peserta</td>
+          <td style="padding: 15px">INPG-PKJ-08-046</td>
+        </tr>
+        <tr>
+          <td style="padding: 15px">Tugas</td>
+          <td style="padding: 15px">Sesi 5</td>
+        </tr>
+      </table>
+
+    <h1>Hitung Mundur Maju</h1>
+
+    <button id="mundur" onclick="mundur()">Mundur</button>
+    <button id="maju" onclick="maju()">Maju</button>
+
+    <div id="hasil"></div>
+
+    <script>
+
+        var angka = 0;
+        function mundur(){
+            angka = angka -1
+            document.getElementById('hasil').innerHTML = angka;
+            }
+
+        function maju(){
+            angka = angka +1
+            document.getElementById('hasil').innerHTML = angka;
+            }
+    </script>
+    
+</body>
+</html>
