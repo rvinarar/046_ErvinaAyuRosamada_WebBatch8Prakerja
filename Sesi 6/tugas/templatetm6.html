@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+  </head>
+
+  <body>
+    <div id="text">
+      <!-- Identitas Saya -->
+      <table>
+        <tr>
+          <td style="padding: 15px">Nama</td>
+          <td style="padding: 15px">Ervina Ayu Rosamada</td>
+        </tr>
+        <tr>
+          <td style="padding: 15px">Kode Peserta</td>
+          <td style="padding: 15px">INPG-PKJ-08-046</td>
+        </tr>
+        <tr>
+          <td style="padding: 15px">Tugas</td>
+          <td style="padding: 15px">Sesi 6</td>
+        </tr>
+      </table>
+
+      <p class="paragraf">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+        recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+        dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+      </p>
+    </div>
+
+    <script>
+      const textElement = document.getElementById("text");
+      let intervalId;
+
+      function changeColor() {
+        const colors = [
+          "#FF0000",
+          "#00FF00",
+          "#0000FF",
+          "#FFFF00",
+          "#00FFFF",
+          "#FF00FF",
+        ];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        textElement.style.color = randomColor;
+      }
+
+      function startAnimation() {
+        intervalId = setInterval(changeColor, 1000);
+      }
+
+      function stopAnimation() {
+        clearInterval(intervalId);
+      }
+
+      setTimeout(startAnimation, 1000); // Mulai animasi setelah 2 detik
+      setTimeout(stopAnimation, 5000); // Berhenti animasi setelah 2 detik
+    </script>
+  </body>
+</html>
